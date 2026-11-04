@@ -1,0 +1,17 @@
+{
+  "games": [
+    {"id": "d18b37d8-2a5f-46e5-b8ba-9f8035b9425b", "name": "Different Strokes", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Different Strokes\\DifferentStrokes.exe"},
+    {"id": "ee02f467-d26a-45ad-a83c-645bcfd87426", "name": "Deep the Game", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Deep the Game\\nw.exe"},
+    {"id": "73c174bd-ab5e-4be8-89df-e6fd59477d53", "name": "Cubiscape 2", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cubiscape 2\\Cubiscape 2.exe"},
+    {"id": "0393e099-384b-45c4-ae04-596071f70dd3", "name": "Bloons Monkey City", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Bloons Monkey City\\BTD5-Win.exe"},
+    {"id": "191c3a70-6d82-459a-bdb0-dd5e261452f0", "name": "Twiggle’s Grove Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Twiggle’s Grove Demo\\Twiggle's Grove.exe"},
+    {"id": "ed934650-25eb-4b20-8d72-97f809f82ea8", "name": "THE KULKA Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\THE KULKA Demo\\Kulka.exe"},
+    {"id": "547d2698-e1b9-4bc0-8050-faa71a98e59e", "name": "THE IMPOSSIBLE Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\THE IMPOSSIBLE Demo\\impossible.exe"},
+    {"id": "b9b31f2a-4b95-4263-9fdb-920b8ffa8792", "name": "Space Invaders Extreme™ Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Space Invaders Extrem Demo\\SIE_DEMO.exe"},
+    {"id": "d3346f51-bea5-48ae-b1fe-0eaf0a7a6333", "name": "Shotgun Cop Man Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Shotgun Cop Man Demo\\Shotgun Cop Man Demo.exe"},
+    {"id": "4401f2c7-6518-4b02-a9be-82fa07c823bf", "name": "OutWave Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\OutWave Demo\\OutWave.exe"},
+    {"id": "45e8dd56-c148-4777-a8a5-067561c71416", "name": "Nodes Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Nodes Demo\\nodes-demo-edition\\nodes-demo-edition.exe"},
+    {"id": "2c47523d-5057-4cb6-af2a-1fce31dd4991", "name": "Dropt Demo", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Dropt Demo\\Dropt Demo.exe"},
+    {"id": "08fa3063-c7d6-41eb-95c0-643b9bde837c", "name": "cr4ckr", "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\cr4ckr\\CutieCafe.Cr4ckr.exe"}
+  ]
+}

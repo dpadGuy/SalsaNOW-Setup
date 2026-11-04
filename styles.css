@@ -1,0 +1,125 @@
+/* Fits as many cards per row as the width allows, each at least wide enough for the title and button. */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.game-card:hover {
+  cursor: pointer;
+  border-color: rgb(8, 121, 250);
+}
+
+.game-hero {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.btn-gfn {
+  --bs-btn-color: #1a1a1a;
+  --bs-btn-bg: #76b900;
+  --bs-btn-border-color: #76b900;
+  --bs-btn-hover-color: #1a1a1a;
+  --bs-btn-hover-bg: #8ad000;
+  --bs-btn-hover-border-color: #8ad000;
+  --bs-btn-active-color: #1a1a1a;
+  --bs-btn-active-bg: #669f00;
+  --bs-btn-active-border-color: #669f00;
+  --bs-btn-focus-shadow-rgb: 118, 185, 0;
+  --bs-btn-font-weight: 500;
+  --bs-btn-border-radius: 4px;
+}
+
+/* Steps are stacked in one grid cell, so the cell is as tall as the tallest step and stays put between steps.
+   The cell is centred in the space below the navbar; the video sizing below leaves enough room under the
+   caption for the fixed step counter and buttons in the bottom right. */
+.play-main {
+  display: grid;
+  align-content: center;
+}
+
+/* On phones and narrow windows the content spans the full width, so keep it above the step counter and buttons. */
+@media (max-width: 767.98px) {
+  .play-main {
+    padding-bottom: 6.75rem;
+  }
+}
+
+.play-main > * {
+  grid-area: 1 / 1;
+  align-self: center;
+}
+
+/* Hidden steps still take up their space (without being seen or clickable) so the cell's height never changes. */
+.play-main > .step[hidden] {
+  display: block !important;
+  visibility: hidden;
+}
+
+/* The requirements step has no video and its text is large, so once left it takes no space; otherwise it would
+   set the height for every step and push them off small screens. */
+.play-main > #notice[hidden] {
+  display: none !important;
+}
+
+/* Videos are pinned to the top of the cell, so every step's player sits in exactly the same place. */
+.play-main > .step:has(video) {
+  align-self: start;
+}
+
+/* Step the requirements text down a size on phones and very short windows so it fits. */
+@media (max-width: 575.98px), (max-height: 560px) {
+  #notice .fs-3 {
+    font-size: 1.3rem !important;
+  }
+
+  #notice .fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  #notice .fs-5 {
+    font-size: 1rem !important;
+  }
+
+  #notice .mt-4 {
+    margin-top: 1rem !important;
+  }
+}
+
+.step-counter {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* As large as the window allows, leaving room for the navbar, caption, copy button and step buttons.
+   Every step uses the same size so the video doesn't jump between steps. */
+.install-video {
+  width: min(100%, calc((100vh - 290px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+}
+
+/* Long captions wrap onto more lines on narrower windows, so leave more room below the video. */
+@media (max-width: 1199.98px) {
+  .install-video {
+    width: min(100%, calc((100vh - 350px) * 16 / 9));
+  }
+}
+
+/* Caption with its copy button, if any, centred underneath. */
+.step-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btn-icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.finish-image {
+  width: min(200px, 40vw);
+  height: auto;
+}
